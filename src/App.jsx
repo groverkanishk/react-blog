@@ -8,6 +8,7 @@ import Technology from '../../react-blog/src/Component/Technology'
 import Fitness from '../../react-blog/src/Component/Fitness'
 import Food from '../../react-blog/src/Component/Food'
 import './App.css'
+import Details from './Component/Details'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="/fitness" element={<Fitness />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/post/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </div>
